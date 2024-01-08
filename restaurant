@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Delights Restaurant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        article {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #444;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img id="header-img" src="restaurant_logo.jpg" alt="Restaurant Logo">
+    <h1>Delicious Delights Restaurant</h1>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#order-form">Place Your Order</a>
+</nav>
+
+<main>
+    <section id="menu">
+        <h2>Menu</h2>
+
+        <article>
+            <img src="dish1.jpg" alt="Dish 1">
+            <h3>Special Pasta</h3>
+            <p>Delicious pasta served with homemade sauce and fresh herbs. <br><i>Price: $12.99</i></p>
+        </article>
+
+        <article>
+            <img src="dish2.jpg" alt="Dish 2">
+            <h3>Grilled Salmon</h3>
+            <p>Freshly grilled salmon fillet seasoned to perfection. <br><i>Price: $15.99</i></p>
+        </article>
+
+        <article>
+            <img src="dish3.jpg" alt="Dish 3">
+            <h3>Vegetarian Delight</h3>
+            <p>Assorted vegetables served with a side of quinoa. <br><i>Price: $10.99</i></p>
+        </article>
+    </section>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+
+        <form>
+            <label for="special-pasta">Special Pasta Quantity:</label>
+            <input type="number" id="special-pasta" name="special-pasta" min="0" value="0">
+
+            <label for="grilled-salmon">Grilled Salmon Quantity:</label>
+            <input type="number" id="grilled-salmon" name="grilled-salmon" min="0" value="0">
+
+            <label for="vegetarian-delight">Vegetarian Delight Quantity:</label>
+            <input type="number" id="vegetarian-delight" name="vegetarian-delight" min="0" value="0">
+
+            <label for="sides">Choose Sides:</label>
+            <input type="checkbox" id="sides1" name="sides" value="bread">
+            <label for="sides1">Bread</label>
+            <input type="checkbox" id="sides2" name="sides" value="salad">
+            <label for="sides2">Salad</label>
+
+            <label for="special-requests">Special Requests:</label>
+            <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+
+            <input type="submit" value="Go To Checkout">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Made with love by YourCodédexUsername</p>
+</footer>
+
+</body>
+</html>
